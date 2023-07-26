@@ -16,13 +16,13 @@ collections:
 defaults:
   -
     scope:
-      path: "_posts"
+      path: ""
       type: "posts"
     values:
       layout: "post"
   -
     scope:
-      path: "_keynotes"
+      path: ""
       type: "keynotes"
     values:
       layout: "keynote" # overrides previous default layout
@@ -42,7 +42,7 @@ github_username:    donlv1997
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README_zh.md"]
+exclude: ["revealjs","less","node_modules","Gruntfile.js","package.json","README.md","README_zh.md"]
 include: ['_pages']
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
