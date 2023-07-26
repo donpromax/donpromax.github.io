@@ -2,18 +2,14 @@
 title: Reveal.js与Jekyll结合演示(幻灯片)
 description : Reveal.js与Jekyll结合演示(幻灯片)
 date: 2023-07-24
-update: 2023-07-24
-author: "donlv"
-category: keynote
+author: "greenwinter"
+layout: greenwinter
 tags:
     - frontend
 theme: league
 transition: slide 
 diagram: true
 mathjax: true
-multiplex:
-  id: 99702b17e6a745f9 #Secret: 14830192734523284320
-  url: https://multiplex.scateu.me
 ---
 {% comment %}
 	https://kramdown.gettalong.org/options.html
