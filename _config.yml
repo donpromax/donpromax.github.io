@@ -13,20 +13,6 @@ collections:
     output: true
     permalink: /keynotes/:path/
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "keynotes"
-    values:
-      layout: "keynote" # overrides previous default layout
-
 # my setting
 future: true
 
