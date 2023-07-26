@@ -5,12 +5,8 @@ description: "My ppt"
 header-img: "img/bg-material.jpg"
 permalink: /keynotes/
 ---
-
-{% assign array1 = site.keynotes | sort: 'date' %}
-{% assign array2 = site.data.keynotes | parse_json | sort: 'date' %}
-{% assign array = array1 | concat: array2 %}
-
-{% for keynote in array %}
+{% assign keynotes = site.keynotes | sort: 'date' | reverse %}
+{% for keynote in keynotes %}
 <div class="book-preview">
     <a href="{{ keynote.url }}" target="_blank">
         <h4 class="post-title">
