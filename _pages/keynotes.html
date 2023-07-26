@@ -1,0 +1,53 @@
+---
+layout: page
+title: "Keynotes"
+description: "My ppt"
+header-img: "img/bg-material.jpg"
+permalink: /keynotes/
+---
+
+{% for keynote in site.keynotes %}
+<div class="book-preview">
+    <a href="{{ keynote.url }}" target="_blank">
+        <h4 class="post-title">
+            {{ keynote.title }}
+        </h4>
+    </a>
+        {% if keynote.subtitle %}
+        <h5 class="post-subtitle">
+            {{ keynote.subtitle }}
+        </h5>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ keynote.description }}
+        </div>
+
+    <p class="post-meta">
+        Posted by {% if keynote.author %}{{ keynote.author }}{% else %}{{ site.title }}{% endif %}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+{% for keynote in site.data.keynotes %}
+<div class="book-preview">
+    <a href="{{ keynote.url }}" target="_blank">
+        <h4 class="post-title">
+            {{ keynote.title }}
+        </h4>
+    </a>
+        {% if keynote.subtitle %}
+        <h5 class="post-subtitle">
+            {{ keynote.subtitle }}
+        </h5>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ keynote.description }}
+        </div>
+
+    <p class="post-meta">
+        Posted by {% if keynote.author %}{{ keynote.author }}{% else %}{{ site.title }}{% endif %}
+    </p>
+</div>
+<hr>
+{% endfor %}

@@ -1,0 +1,125 @@
+# Site settings
+title: GreenWinter Blog
+SEOTitle: 绿冬的博客 | Dong Lyu's Blog
+header-img: img/home-bg.jpg
+email: donlv1997@163.com
+description: "摸鱼使人快乐"
+keyword: "blog"
+url: "https://donlv1997.github.io"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+
+collections:
+  keynotes:
+    output: true
+    permalink: /keynotes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "keynotes"
+    values:
+      layout: "keynote"
+
+# my setting
+future: true
+
+# SNS settings
+RSS: true
+github_username:    donlv1997
+# weibo_username:     
+# twitter_username:   
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README_zh.md"]
+include: ['_pages']
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+    # math_engine: mathjax
+    input: GFM
+    hard_wrap: true
+    # syntax_highlighter_opts:
+    #         disable: true
+    # syntax_highlighter_opts:
+    #   span:
+    #     line_numbers: false
+    #   block:
+    #     line_numbers: false
+    #     start_line: 1
+
+
+# Disqus settings
+# disqus_username: donlv1997githubio
+
+# Duoshuo settings
+# duoshuo_username: huxblog
+# Share component is depend on Comment so we can NOT use share only.
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+# gitalk
+gitalk:
+  enable: true
+  owner: 'donlv1997'
+  repo: 'donlv1997.github.io'
+  client_id: 'bf65f0c2804c0a49b820'
+  client_secret: '150f0fe201c15a72f13ddee38e0ccce787058c87'
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: e6a13a93288708d3dee567a97fbfb3df
+# Google Analytics
+ga_track_id: 'UA-180536439-1'            # Format: UA-xxxxxx-xx
+ga_domain: donlv1997.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "大家都好厉害哦，我只能边摸边发出感慨"
+sidebar-avatar: /img/head_picture.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+# Friends
+friends: [
+    {
+        title: "lab369",
+        href: "http://lab.zhuzhuguowang.cn:36900/dokuwiki/doku.php/start"
+    },
+    {
+        title: "xnchen blog",
+        href: "https://kyokoning.github.io"
+    }
+]
