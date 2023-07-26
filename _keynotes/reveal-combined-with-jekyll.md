@@ -29,10 +29,10 @@ tags:
     </aside>
 </section> 
 
-<section data-markdown data-auto-animate>
+<section markdown="1" data-auto-animate>
 
 ## Maxwell Equations
-`
+
 $$
 \begin{align}
   \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
@@ -41,7 +41,7 @@ $$
   \nabla \cdot \vec{\mathbf{B}} & = 0
 \end{align}
 $$
-`
+
 </section> <section data-markdown data-auto-animate>
 
 使用MathJax，语法为 $\LaTeX$。
