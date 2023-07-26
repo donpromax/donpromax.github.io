@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Keynotes
-description: "My ppt"
+description: My ppt
 header-img: "img/bg-material.jpg"
 permalink: /keynotes/
 ---
 {% assign keynotes = site.keynotes | sort: 'date' | reverse %}
 {% for keynote in keynotes %}
-<div class="book-preview">
+<div class="post-preview">
     <a href="{{ keynote.url }}" target="_blank">
         <h4 class="post-title">
             {{ keynote.title }}

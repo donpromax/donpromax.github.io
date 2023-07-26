@@ -14,16 +14,18 @@ collections:
     permalink: /keynotes/:path/
 
 defaults:
-  - scope:
-      path: ""
+  -
+    scope:
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
+  -
+    scope:
+      path: "_keynotes"
       type: "keynotes"
     values:
-      layout: "keynote"
+      layout: "keynote" # overrides previous default layout
 
 # my setting
 future: true
