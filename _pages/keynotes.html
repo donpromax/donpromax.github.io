@@ -1,18 +1,21 @@
 ---
 layout: page
-title: "Keynotes"
+title: Keynotes
 description: "My ppt"
 header-img: "img/bg-material.jpg"
 permalink: /keynotes/
 ---
 
-{% for keynote in site.keynotes %}
+{% assign array1 = site.keynotes | sort: 'date' %}
+{% assign array2 = site.data.keynotes | parse_json | sort: 'date' %}
+{% assign array = array1 | concat: array2 %}
+
+{% for keynote in array %}
 <div class="book-preview">
     <a href="{{ keynote.url }}" target="_blank">
         <h4 class="post-title">
             {{ keynote.title }}
         </h4>
-    </a>
         {% if keynote.subtitle %}
         <h5 class="post-subtitle">
             {{ keynote.subtitle }}
@@ -21,32 +24,10 @@ permalink: /keynotes/
         <div class="post-content-preview">
             {{ keynote.description }}
         </div>
-
-    <p class="post-meta">
-        Posted by {% if keynote.author %}{{ keynote.author }}{% else %}{{ site.title }}{% endif %}
-    </p>
-</div>
-<hr>
-{% endfor %}
-
-{% for keynote in site.data.keynotes %}
-<div class="book-preview">
-    <a href="{{ keynote.url }}" target="_blank">
-        <h4 class="post-title">
-            {{ keynote.title }}
-        </h4>
     </a>
-        {% if keynote.subtitle %}
-        <h5 class="post-subtitle">
-            {{ keynote.subtitle }}
-        </h5>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ keynote.description }}
-        </div>
 
     <p class="post-meta">
-        Posted by {% if keynote.author %}{{ keynote.author }}{% else %}{{ site.title }}{% endif %}
+        Posted by {% if keynote.author %}{{ keynote.author }}{% else %}{{ site.title }}{% endif %} on {{ keynote.date | date: "%B %-d, %Y" }}
     </p>
 </div>
 <hr>
