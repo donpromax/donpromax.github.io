@@ -39,11 +39,18 @@
 			<link rel="stylesheet" href='{{ "/revealjs/dist/theme/black.css" | prepend: site.baseurl }}' id="theme"/>
 	  	{% endif %}
 		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href='{{ "/revealjs/plugin/highlight/monokai.css" | prepend: site.baseurl }}'>
+		<!-- Blog Nav Title style -->
+		<link rel="stylesheet" href="/css/keynote-blog-title.css">
 	</head>
 
 	<body>
+		<nav class="nav-blog-title">
+			<a href="/keynotes/" class="blog-title">{{ site.title }}</a>
+		</nav>
 
 		<div class="reveal">
 
