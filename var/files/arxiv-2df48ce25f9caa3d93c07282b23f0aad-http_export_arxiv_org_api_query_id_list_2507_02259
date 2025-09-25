@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2507.02259%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2507.02259&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/Yw7DCqfflRx7MV72A6yMSCIZSLU</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2507.02259v1</id>
+    <updated>2025-07-03T03:11:50Z</updated>
+    <published>2025-07-03T03:11:50Z</published>
+    <title>MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory
+  Agent</title>
+    <summary>  Despite improvements by length extrapolation, efficient attention and memory
+modules, handling infinitely long documents with linear complexity without
+performance degradation during extrapolation remains the ultimate challenge in
+long-text processing. We directly optimize for long-text tasks in an end-to-end
+fashion and introduce a novel agent workflow, MemAgent, which reads text in
+segments and updates the memory using an overwrite strategy. We extend the DAPO
+algorithm to facilitate training via independent-context multi-conversation
+generation. MemAgent has demonstrated superb long-context capabilities, being
+able to extrapolate from an 8K context trained on 32K text to a 3.5M QA task
+with performance loss &lt; 5% and achieves 95%+ in 512K RULER test.
+</summary>
+    <author>
+      <name>Hongli Yu</name>
+    </author>
+    <author>
+      <name>Tinghong Chen</name>
+    </author>
+    <author>
+      <name>Jiangtao Feng</name>
+    </author>
+    <author>
+      <name>Jiangjie Chen</name>
+    </author>
+    <author>
+      <name>Weinan Dai</name>
+    </author>
+    <author>
+      <name>Qiying Yu</name>
+    </author>
+    <author>
+      <name>Ya-Qin Zhang</name>
+    </author>
+    <author>
+      <name>Wei-Ying Ma</name>
+    </author>
+    <author>
+      <name>Jingjing Liu</name>
+    </author>
+    <author>
+      <name>Mingxuan Wang</name>
+    </author>
+    <author>
+      <name>Hao Zhou</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Project Page: https://memagent-sialab.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2507.02259v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2507.02259v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

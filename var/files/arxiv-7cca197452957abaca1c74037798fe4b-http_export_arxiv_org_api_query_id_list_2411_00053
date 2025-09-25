@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2411.00053%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2411.00053&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/1T3pvktFeSUfqpmC/pcPN9nZEdw</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2411.00053v3</id>
+    <updated>2025-03-06T16:28:55Z</updated>
+    <published>2024-10-30T19:09:02Z</published>
+    <title>ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration</title>
+    <summary>  Large language models (LLMs) have demonstrated a remarkable ability to serve
+as general-purpose tools for various language-based tasks. Recent works have
+demonstrated that the efficacy of such models can be improved through iterative
+dialog between multiple models. While these paradigms show promise in improving
+model efficacy, most works in this area treat collaboration as an emergent
+behavior, rather than a learned behavior. In doing so, current multi-agent
+frameworks rely on collaborative behaviors to have been sufficiently trained
+into off-the-shelf models. To address this limitation, we propose ACC-Collab,
+an Actor-Critic based learning framework to produce a two-agent team (an
+actor-agent and a critic-agent) specialized in collaboration. We demonstrate
+that ACC-Collab outperforms SotA multi-agent techniques on a wide array of
+benchmarks.
+</summary>
+    <author>
+      <name>Andrew Estornell</name>
+    </author>
+    <author>
+      <name>Jean-Francois Ton</name>
+    </author>
+    <author>
+      <name>Yuanshun Yao</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <link href="http://arxiv.org/abs/2411.00053v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2411.00053v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

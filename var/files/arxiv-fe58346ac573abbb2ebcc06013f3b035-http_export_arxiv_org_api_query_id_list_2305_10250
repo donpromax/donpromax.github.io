@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2305.10250%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2305.10250&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/9UC2UESU+mybAVdwz6UCMbp5Awg</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2305.10250v3</id>
+    <updated>2023-05-21T06:20:28Z</updated>
+    <published>2023-05-17T14:40:29Z</published>
+    <title>MemoryBank: Enhancing Large Language Models with Long-Term Memory</title>
+    <summary>  Revolutionary advancements in Large Language Models have drastically reshaped
+our interactions with artificial intelligence systems. Despite this, a notable
+hindrance remains-the deficiency of a long-term memory mechanism within these
+models. This shortfall becomes increasingly evident in situations demanding
+sustained interaction, such as personal companion systems and psychological
+counseling. Therefore, we propose MemoryBank, a novel memory mechanism tailored
+for LLMs. MemoryBank enables the models to summon relevant memories,
+continually evolve through continuous memory updates, comprehend, and adapt to
+a user personality by synthesizing information from past interactions. To mimic
+anthropomorphic behaviors and selectively preserve memory, MemoryBank
+incorporates a memory updating mechanism, inspired by the Ebbinghaus Forgetting
+Curve theory, which permits the AI to forget and reinforce memory based on time
+elapsed and the relative significance of the memory, thereby offering a
+human-like memory mechanism. MemoryBank is versatile in accommodating both
+closed-source models like ChatGPT and open-source models like ChatGLM. We
+exemplify application of MemoryBank through the creation of an LLM-based
+chatbot named SiliconFriend in a long-term AI Companion scenario. Further tuned
+with psychological dialogs, SiliconFriend displays heightened empathy in its
+interactions. Experiment involves both qualitative analysis with real-world
+user dialogs and quantitative analysis with simulated dialogs. In the latter,
+ChatGPT acts as users with diverse characteristics and generates long-term
+dialog contexts covering a wide array of topics. The results of our analysis
+reveal that SiliconFriend, equipped with MemoryBank, exhibits a strong
+capability for long-term companionship as it can provide emphatic response,
+recall relevant memories and understand user personality.
+</summary>
+    <author>
+      <name>Wanjun Zhong</name>
+    </author>
+    <author>
+      <name>Lianghong Guo</name>
+    </author>
+    <author>
+      <name>Qiqi Gao</name>
+    </author>
+    <author>
+      <name>He Ye</name>
+    </author>
+    <author>
+      <name>Yanlin Wang</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">10 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2305.10250v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2305.10250v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

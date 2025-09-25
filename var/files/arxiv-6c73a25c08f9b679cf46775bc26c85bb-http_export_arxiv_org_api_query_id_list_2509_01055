@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2509.01055%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2509.01055&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/xahRhL1oAL6cIYKeKyMDGL1MMw4</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2509.01055v1</id>
+    <updated>2025-09-01T01:45:18Z</updated>
+    <published>2025-09-01T01:45:18Z</published>
+    <title>VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use</title>
+    <summary>  Reinforcement Learning with Verifiable Rewards (RLVR) has demonstrated
+success in enhancing LLM reasoning capabilities, but remains limited to
+single-turn interactions without tool integration. While recent Agentic
+Reinforcement Learning with Tool use (ARLT) approaches have emerged to address
+multi-turn tool interactions, existing works develop task-specific codebases
+that suffer from fragmentation, synchronous execution bottlenecks, and limited
+extensibility across domains. These inefficiencies hinder broader community
+adoption and algorithmic innovation. We introduce VerlTool, a unified and
+modular framework that addresses these limitations through systematic design
+principles. VerlTool provides four key contributions: (1) upstream alignment
+with VeRL ensuring compatibility and simplified maintenance, (2) unified tool
+management via standardized APIs supporting diverse modalities including code
+execution, search, SQL databases, and vision processing, (3) asynchronous
+rollout execution achieving near 2$\times$ speedup by eliminating
+synchronization bottlenecks, and (4) comprehensive evaluation demonstrating
+competitive performance across 6 ARLT domains. Our framework formalizes ARLT as
+multi-turn trajectories with multi-modal observation tokens (text/image/video),
+extending beyond single-turn RLVR paradigms. We train and evaluate models on
+mathematical reasoning, knowledge QA, SQL generation, visual reasoning, web
+search, and software engineering tasks, achieving results comparable to
+specialized systems while providing unified training infrastructure. The
+modular plugin architecture enables rapid tool integration requiring only
+lightweight Python definitions, significantly reducing development overhead and
+providing a scalable foundation for tool-augmented RL research. Our code is
+open-sourced at https://github.com/TIGER-AI-Lab/verl-tool.
+</summary>
+    <author>
+      <name>Dongfu Jiang</name>
+    </author>
+    <author>
+      <name>Yi Lu</name>
+    </author>
+    <author>
+      <name>Zhuofeng Li</name>
+    </author>
+    <author>
+      <name>Zhiheng Lyu</name>
+    </author>
+    <author>
+      <name>Ping Nie</name>
+    </author>
+    <author>
+      <name>Haozhe Wang</name>
+    </author>
+    <author>
+      <name>Alex Su</name>
+    </author>
+    <author>
+      <name>Hui Chen</name>
+    </author>
+    <author>
+      <name>Kai Zou</name>
+    </author>
+    <author>
+      <name>Chao Du</name>
+    </author>
+    <author>
+      <name>Tianyu Pang</name>
+    </author>
+    <author>
+      <name>Wenhu Chen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">32 pages, 5 figures, 13 tables</arxiv:comment>
+    <link href="http://arxiv.org/abs/2509.01055v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2509.01055v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2509.02544%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2509.02544&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/yT8ZijzDngLzrGOhjTNLFU+HEI4</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2509.02544v2</id>
+    <updated>2025-09-05T14:59:27Z</updated>
+    <published>2025-09-02T17:44:45Z</published>
+    <title>UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn
+  Reinforcement Learning</title>
+    <summary>  The development of autonomous agents for graphical user interfaces (GUIs)
+presents major challenges in artificial intelligence. While recent advances in
+native agent models have shown promise by unifying perception, reasoning,
+action, and memory through end-to-end learning, open problems remain in data
+scalability, multi-turn reinforcement learning (RL), the limitations of
+GUI-only operation, and environment stability. In this technical report, we
+present UI-TARS-2, a native GUI-centered agent model that addresses these
+challenges through a systematic training methodology: a data flywheel for
+scalable data generation, a stabilized multi-turn RL framework, a hybrid GUI
+environment that integrates file systems and terminals, and a unified sandbox
+platform for large-scale rollouts. Empirical evaluation demonstrates that
+UI-TARS-2 achieves significant improvements over its predecessor UI-TARS-1.5.
+On GUI benchmarks, it reaches 88.2 on Online-Mind2Web, 47.5 on OSWorld, 50.6 on
+WindowsAgentArena, and 73.3 on AndroidWorld, outperforming strong baselines
+such as Claude and OpenAI agents. In game environments, it attains a mean
+normalized score of 59.8 across a 15-game suite-roughly 60% of human-level
+performance-and remains competitive with frontier proprietary models (e.g.,
+OpenAI o3) on LMGame-Bench. Additionally, the model can generalize to
+long-horizon information-seeking tasks and software engineering benchmarks,
+highlighting its robustness across diverse agent tasks. Detailed analyses of
+training dynamics further provide insights into achieving stability and
+efficiency in large-scale agent RL. These results underscore UI-TARS-2's
+potential to advance the state of GUI agents and exhibit strong generalization
+to real-world interactive scenarios.
+</summary>
+    <author>
+      <name>Haoming Wang</name>
+    </author>
+    <author>
+      <name>Haoyang Zou</name>
+    </author>
+    <author>
+      <name>Huatong Song</name>
+    </author>
+    <author>
+      <name>Jiazhan Feng</name>
+    </author>
+    <author>
+      <name>Junjie Fang</name>
+    </author>
+    <author>
+      <name>Junting Lu</name>
+    </author>
+    <author>
+      <name>Longxiang Liu</name>
+    </author>
+    <author>
+      <name>Qinyu Luo</name>
+    </author>
+    <author>
+      <name>Shihao Liang</name>
+    </author>
+    <author>
+      <name>Shijue Huang</name>
+    </author>
+    <author>
+      <name>Wanjun Zhong</name>
+    </author>
+    <author>
+      <name>Yining Ye</name>
+    </author>
+    <author>
+      <name>Yujia Qin</name>
+    </author>
+    <author>
+      <name>Yuwen Xiong</name>
+    </author>
+    <author>
+      <name>Yuxin Song</name>
+    </author>
+    <author>
+      <name>Zhiyong Wu</name>
+    </author>
+    <author>
+      <name>Aoyan Li</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Chen Dun</name>
+    </author>
+    <author>
+      <name>Chong Liu</name>
+    </author>
+    <author>
+      <name>Daoguang Zan</name>
+    </author>
+    <author>
+      <name>Fuxing Leng</name>
+    </author>
+    <author>
+      <name>Hanbin Wang</name>
+    </author>
+    <author>
+      <name>Hao Yu</name>
+    </author>
+    <author>
+      <name>Haobin Chen</name>
+    </author>
+    <author>
+      <name>Hongyi Guo</name>
+    </author>
+    <author>
+      <name>Jing Su</name>
+    </author>
+    <author>
+      <name>Jingjia Huang</name>
+    </author>
+    <author>
+      <name>Kai Shen</name>
+    </author>
+    <author>
+      <name>Kaiyu Shi</name>
+    </author>
+    <author>
+      <name>Lin Yan</name>
+    </author>
+    <author>
+      <name>Peiyao Zhao</name>
+    </author>
+    <author>
+      <name>Pengfei Liu</name>
+    </author>
+    <author>
+      <name>Qinghao Ye</name>
+    </author>
+    <author>
+      <name>Renjie Zheng</name>
+    </author>
+    <author>
+      <name>Shulin Xin</name>
+    </author>
+    <author>
+      <name>Wayne Xin Zhao</name>
+    </author>
+    <author>
+      <name>Wen Heng</name>
+    </author>
+    <author>
+      <name>Wenhao Huang</name>
+    </author>
+    <author>
+      <name>Wenqian Wang</name>
+    </author>
+    <author>
+      <name>Xiaobo Qin</name>
+    </author>
+    <author>
+      <name>Yi Lin</name>
+    </author>
+    <author>
+      <name>Youbin Wu</name>
+    </author>
+    <author>
+      <name>Zehui Chen</name>
+    </author>
+    <author>
+      <name>Zihao Wang</name>
+    </author>
+    <author>
+      <name>Baoquan Zhong</name>
+    </author>
+    <author>
+      <name>Xinchun Zhang</name>
+    </author>
+    <author>
+      <name>Xujing Li</name>
+    </author>
+    <author>
+      <name>Yuanfan Li</name>
+    </author>
+    <author>
+      <name>Zhongkai Zhao</name>
+    </author>
+    <author>
+      <name>Chengquan Jiang</name>
+    </author>
+    <author>
+      <name>Faming Wu</name>
+    </author>
+    <author>
+      <name>Haotian Zhou</name>
+    </author>
+    <author>
+      <name>Jinlin Pang</name>
+    </author>
+    <author>
+      <name>Li Han</name>
+    </author>
+    <author>
+      <name>Qi Liu</name>
+    </author>
+    <author>
+      <name>Qianli Ma</name>
+    </author>
+    <author>
+      <name>Siyao Liu</name>
+    </author>
+    <author>
+      <name>Songhua Cai</name>
+    </author>
+    <author>
+      <name>Wenqi Fu</name>
+    </author>
+    <author>
+      <name>Xin Liu</name>
+    </author>
+    <author>
+      <name>Yaohui Wang</name>
+    </author>
+    <author>
+      <name>Zhi Zhang</name>
+    </author>
+    <author>
+      <name>Bo Zhou</name>
+    </author>
+    <author>
+      <name>Guoliang Li</name>
+    </author>
+    <author>
+      <name>Jiajun Shi</name>
+    </author>
+    <author>
+      <name>Jiale Yang</name>
+    </author>
+    <author>
+      <name>Jie Tang</name>
+    </author>
+    <author>
+      <name>Li Li</name>
+    </author>
+    <author>
+      <name>Qihua Han</name>
+    </author>
+    <author>
+      <name>Taoran Lu</name>
+    </author>
+    <author>
+      <name>Woyu Lin</name>
+    </author>
+    <author>
+      <name>Xiaokang Tong</name>
+    </author>
+    <author>
+      <name>Xinyao Li</name>
+    </author>
+    <author>
+      <name>Yichi Zhang</name>
+    </author>
+    <author>
+      <name>Yu Miao</name>
+    </author>
+    <author>
+      <name>Zhengxuan Jiang</name>
+    </author>
+    <author>
+      <name>Zili Li</name>
+    </author>
+    <author>
+      <name>Ziyuan Zhao</name>
+    </author>
+    <author>
+      <name>Chenxin Li</name>
+    </author>
+    <author>
+      <name>Dehua Ma</name>
+    </author>
+    <author>
+      <name>Feng Lin</name>
+    </author>
+    <author>
+      <name>Ge Zhang</name>
+    </author>
+    <author>
+      <name>Haihua Yang</name>
+    </author>
+    <author>
+      <name>Hangyu Guo</name>
+    </author>
+    <author>
+      <name>Hongda Zhu</name>
+    </author>
+    <author>
+      <name>Jiaheng Liu</name>
+    </author>
+    <author>
+      <name>Junda Du</name>
+    </author>
+    <author>
+      <name>Kai Cai</name>
+    </author>
+    <author>
+      <name>Kuanye Li</name>
+    </author>
+    <author>
+      <name>Lichen Yuan</name>
+    </author>
+    <author>
+      <name>Meilan Han</name>
+    </author>
+    <author>
+      <name>Minchao Wang</name>
+    </author>
+    <author>
+      <name>Shuyue Guo</name>
+    </author>
+    <author>
+      <name>Tianhao Cheng</name>
+    </author>
+    <author>
+      <name>Xiaobo Ma</name>
+    </author>
+    <author>
+      <name>Xiaojun Xiao</name>
+    </author>
+    <author>
+      <name>Xiaolong Huang</name>
+    </author>
+    <author>
+      <name>Xinjie Chen</name>
+    </author>
+    <author>
+      <name>Yidi Du</name>
+    </author>
+    <author>
+      <name>Yilin Chen</name>
+    </author>
+    <author>
+      <name>Yiwen Wang</name>
+    </author>
+    <author>
+      <name>Zhaojian Li</name>
+    </author>
+    <author>
+      <name>Zhenzhu Yang</name>
+    </author>
+    <author>
+      <name>Zhiyuan Zeng</name>
+    </author>
+    <author>
+      <name>Chaolin Jin</name>
+    </author>
+    <author>
+      <name>Chen Li</name>
+    </author>
+    <author>
+      <name>Hao Chen</name>
+    </author>
+    <author>
+      <name>Haoli Chen</name>
+    </author>
+    <author>
+      <name>Jian Chen</name>
+    </author>
+    <author>
+      <name>Qinghao Zhao</name>
+    </author>
+    <author>
+      <name>Guang Shi</name>
+    </author>
+    <link href="http://arxiv.org/abs/2509.02544v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2509.02544v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2509.02547%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2509.02547&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/j97Rd9v2TiQE4/iKhaZisElnCt8</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2509.02547v1</id>
+    <updated>2025-09-02T17:46:26Z</updated>
+    <published>2025-09-02T17:46:26Z</published>
+    <title>The Landscape of Agentic Reinforcement Learning for LLMs: A Survey</title>
+    <summary>  The emergence of agentic reinforcement learning (Agentic RL) marks a paradigm
+shift from conventional reinforcement learning applied to large language models
+(LLM RL), reframing LLMs from passive sequence generators into autonomous,
+decision-making agents embedded in complex, dynamic worlds. This survey
+formalizes this conceptual shift by contrasting the degenerate single-step
+Markov Decision Processes (MDPs) of LLM-RL with the temporally extended,
+partially observable Markov decision processes (POMDPs) that define Agentic RL.
+Building on this foundation, we propose a comprehensive twofold taxonomy: one
+organized around core agentic capabilities, including planning, tool use,
+memory, reasoning, self-improvement, and perception, and the other around their
+applications across diverse task domains. Central to our thesis is that
+reinforcement learning serves as the critical mechanism for transforming these
+capabilities from static, heuristic modules into adaptive, robust agentic
+behavior. To support and accelerate future research, we consolidate the
+landscape of open-source environments, benchmarks, and frameworks into a
+practical compendium. By synthesizing over five hundred recent works, this
+survey charts the contours of this rapidly evolving field and highlights the
+opportunities and challenges that will shape the development of scalable,
+general-purpose AI agents.
+</summary>
+    <author>
+      <name>Guibin Zhang</name>
+    </author>
+    <author>
+      <name>Hejia Geng</name>
+    </author>
+    <author>
+      <name>Xiaohang Yu</name>
+    </author>
+    <author>
+      <name>Zhenfei Yin</name>
+    </author>
+    <author>
+      <name>Zaibin Zhang</name>
+    </author>
+    <author>
+      <name>Zelin Tan</name>
+    </author>
+    <author>
+      <name>Heng Zhou</name>
+    </author>
+    <author>
+      <name>Zhongzhi Li</name>
+    </author>
+    <author>
+      <name>Xiangyuan Xue</name>
+    </author>
+    <author>
+      <name>Yijiang Li</name>
+    </author>
+    <author>
+      <name>Yifan Zhou</name>
+    </author>
+    <author>
+      <name>Yang Chen</name>
+    </author>
+    <author>
+      <name>Chen Zhang</name>
+    </author>
+    <author>
+      <name>Yutao Fan</name>
+    </author>
+    <author>
+      <name>Zihu Wang</name>
+    </author>
+    <author>
+      <name>Songtao Huang</name>
+    </author>
+    <author>
+      <name>Yue Liao</name>
+    </author>
+    <author>
+      <name>Hongru Wang</name>
+    </author>
+    <author>
+      <name>Mengyue Yang</name>
+    </author>
+    <author>
+      <name>Heng Ji</name>
+    </author>
+    <author>
+      <name>Michael Littman</name>
+    </author>
+    <author>
+      <name>Jun Wang</name>
+    </author>
+    <author>
+      <name>Shuicheng Yan</name>
+    </author>
+    <author>
+      <name>Philip Torr</name>
+    </author>
+    <author>
+      <name>Lei Bai</name>
+    </author>
+    <link href="http://arxiv.org/abs/2509.02547v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2509.02547v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

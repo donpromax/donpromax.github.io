@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2505.14362%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2505.14362&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/9wW6LBB6NBrvtbie7lE3Dnkeov0</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2505.14362v2</id>
+    <updated>2025-05-26T13:19:11Z</updated>
+    <published>2025-05-20T13:48:11Z</published>
+    <title>DeepEyes: Incentivizing "Thinking with Images" via Reinforcement
+  Learning</title>
+    <summary>  Large Vision-Language Models (VLMs) have shown strong capabilities in
+multimodal understanding and reasoning, yet they are primarily constrained by
+text-based reasoning processes. However, achieving seamless integration of
+visual and textual reasoning which mirrors human cognitive processes remains a
+significant challenge. In particular, effectively incorporating advanced visual
+input processing into reasoning mechanisms is still an open question. Thus, in
+this paper, we explore the interleaved multimodal reasoning paradigm and
+introduce DeepEyes, a model with "thinking with images" capabilities
+incentivized through end-to-end reinforcement learning without the need for
+cold-start SFT. Notably, this ability emerges natively within the model itself,
+leveraging its inherent grounding ability as a tool instead of depending on
+separate specialized models. Specifically, we propose a tool-use-oriented data
+selection mechanism and a reward strategy to encourage successful tool-assisted
+reasoning trajectories. DeepEyes achieves significant performance gains on
+fine-grained perception and reasoning benchmarks and also demonstrates
+improvement in grounding, hallucination, and mathematical reasoning tasks.
+Interestingly, we observe the distinct evolution of tool-calling behavior from
+initial exploration to efficient and accurate exploitation, and diverse
+thinking patterns that closely mirror human visual reasoning processes. Code is
+available at https://github.com/Visual-Agent/DeepEyes.
+</summary>
+    <author>
+      <name>Ziwei Zheng</name>
+    </author>
+    <author>
+      <name>Michael Yang</name>
+    </author>
+    <author>
+      <name>Jack Hong</name>
+    </author>
+    <author>
+      <name>Chenxiao Zhao</name>
+    </author>
+    <author>
+      <name>Guohai Xu</name>
+    </author>
+    <author>
+      <name>Le Yang</name>
+    </author>
+    <author>
+      <name>Chao Shen</name>
+    </author>
+    <author>
+      <name>Xing Yu</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Ziwei, Michael, Jack, and Chenxiao are equal-contribution. The list
+  order is random</arxiv:comment>
+    <link href="http://arxiv.org/abs/2505.14362v2" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.14362v2" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

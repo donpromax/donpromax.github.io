@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2509.13313%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2509.13313&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/JN7XKoBMHvNGrN+GOP55V9o3WUE</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2509.13313v1</id>
+    <updated>2025-09-16T17:57:22Z</updated>
+    <published>2025-09-16T17:57:22Z</published>
+    <title>ReSum: Unlocking Long-Horizon Search Intelligence via Context
+  Summarization</title>
+    <summary>  Large Language Model (LLM)-based web agents demonstrate strong performance on
+knowledge-intensive tasks but are hindered by context window limitations in
+paradigms like ReAct. Complex queries involving multiple entities, intertwined
+relationships, and high uncertainty demand extensive search cycles that rapidly
+exhaust context budgets before reaching complete solutions. To overcome this
+challenge, we introduce ReSum, a novel paradigm that enables indefinite
+exploration through periodic context summarization. ReSum converts growing
+interaction histories into compact reasoning states, maintaining awareness of
+prior discoveries while bypassing context constraints. For paradigm adaptation,
+we propose ReSum-GRPO, integrating GRPO with segmented trajectory training and
+advantage broadcasting to familiarize agents with summary-conditioned
+reasoning. Extensive experiments on web agents of varying scales across three
+benchmarks demonstrate that ReSum delivers an average absolute improvement of
+4.5\% over ReAct, with further gains of up to 8.2\% following ReSum-GRPO
+training. Notably, with only 1K training samples, our WebResummer-30B (a
+ReSum-GRPO-trained version of WebSailor-30B) achieves 33.3\% Pass@1 on
+BrowseComp-zh and 18.3\% on BrowseComp-en, surpassing existing open-source web
+agents.
+</summary>
+    <author>
+      <name>Xixi Wu</name>
+    </author>
+    <author>
+      <name>Kuan Li</name>
+    </author>
+    <author>
+      <name>Yida Zhao</name>
+    </author>
+    <author>
+      <name>Liwen Zhang</name>
+    </author>
+    <author>
+      <name>Litu Ou</name>
+    </author>
+    <author>
+      <name>Huifeng Yin</name>
+    </author>
+    <author>
+      <name>Zhongwang Zhang</name>
+    </author>
+    <author>
+      <name>Yong Jiang</name>
+    </author>
+    <author>
+      <name>Pengjun Xie</name>
+    </author>
+    <author>
+      <name>Fei Huang</name>
+    </author>
+    <author>
+      <name>Minhao Cheng</name>
+    </author>
+    <author>
+      <name>Shuai Wang</name>
+    </author>
+    <author>
+      <name>Hong Cheng</name>
+    </author>
+    <author>
+      <name>Jingren Zhou</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2509.13313v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2509.13313v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

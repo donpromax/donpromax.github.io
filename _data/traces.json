@@ -1,5 +1,10 @@
 [   
     {
+        "title": "Agentic RL",
+        "url": "agentic_rl.json",
+        "description": "Sharing Insights on Training and Inference in Agentic Reinforcement Learning"
+    },
+    {
         "title": "Tool Call Example",
         "url": "tool_call_example.json",
         "description": "Qwen3 tool call example"

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2505.20732%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2505.20732&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/f0g+nmlZqTXC1RMafmRlnQzSxr0</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2505.20732v1</id>
+    <updated>2025-05-27T05:21:04Z</updated>
+    <published>2025-05-27T05:21:04Z</published>
+    <title>SPA-RL: Reinforcing LLM Agents via Stepwise Progress Attribution</title>
+    <summary>  Reinforcement learning (RL) holds significant promise for training LLM agents
+to handle complex, goal-oriented tasks that require multi-step interactions
+with external environments. However, a critical challenge when applying RL to
+these agentic tasks arises from delayed rewards: feedback signals are typically
+available only after the entire task is completed. This makes it non-trivial to
+assign delayed rewards to earlier actions, providing insufficient guidance
+regarding environmental constraints and hindering agent training. In this work,
+we draw on the insight that the ultimate completion of a task emerges from the
+cumulative progress an agent makes across individual steps. We propose Stepwise
+Progress Attribution (SPA), a general reward redistribution framework that
+decomposes the final reward into stepwise contributions, each reflecting its
+incremental progress toward overall task completion. To achieve this, we train
+a progress estimator that accumulates stepwise contributions over a trajectory
+to match the task completion. During policy optimization, we combine the
+estimated per-step contribution with a grounding signal for actions executed in
+the environment as the fine-grained, intermediate reward for effective agent
+training. Extensive experiments on common agent benchmarks (including Webshop,
+ALFWorld, and VirtualHome) demonstrate that SPA consistently outperforms the
+state-of-the-art method in both success rate (+2.5\% on average) and grounding
+accuracy (+1.9\% on average). Further analyses demonstrate that our method
+remarkably provides more effective intermediate rewards for RL training. Our
+code is available at https://github.com/WangHanLinHenry/SPA-RL-Agent.
+</summary>
+    <author>
+      <name>Hanlin Wang</name>
+    </author>
+    <author>
+      <name>Chak Tou Leong</name>
+    </author>
+    <author>
+      <name>Jiashuo Wang</name>
+    </author>
+    <author>
+      <name>Jian Wang</name>
+    </author>
+    <author>
+      <name>Wenjie Li</name>
+    </author>
+    <link href="http://arxiv.org/abs/2505.20732v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2505.20732v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

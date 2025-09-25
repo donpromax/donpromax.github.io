@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3D%26id_list%3D2508.19828%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=&amp;id_list=2508.19828&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/qV8f0E5aMXkY78Xqy/SvPTEQet4</id>
+  <updated>2025-09-25T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2508.19828v3</id>
+    <updated>2025-09-03T09:33:30Z</updated>
+    <published>2025-08-27T12:26:55Z</published>
+    <title>Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize
+  Memories via Reinforcement Learning</title>
+    <summary>  Large Language Models (LLMs) have demonstrated impressive capabilities across
+a wide range of NLP tasks, but they remain fundamentally stateless, constrained
+by limited context windows that hinder long-horizon reasoning. Recent efforts
+to address this limitation often augment LLMs with an external memory bank, yet
+most existing pipelines are static and heuristic-driven, lacking any learned
+mechanism for deciding what to store, update, or retrieve. We present
+Memory-R1, a reinforcement learning (RL) framework that equips LLMs with the
+ability to actively manage and utilize external memory through two specialized
+agents: a Memory Manager that learns to perform structured memory operations,
+including adding, updating, deleting, or taking no operation on memory entries;
+and an Answer Agent that selects the most relevant entries and reasons over
+them to produce an answer. Both agents are fine-tuned with outcome-driven RL
+(PPO and GRPO), enabling adaptive memory management and utilization with
+minimal supervision. With as few as 152 question-answer pairs and a
+corresponding temporal memory bank for training, Memory-R1 outperforms the
+strongest existing baseline and demonstrates strong generalization across
+diverse question types and LLM backbones. Beyond presenting an effective
+approach, this work provides insights into how RL can unlock more agentic,
+memory-aware behavior in LLMs, pointing toward richer, more persistent
+reasoning systems.
+</summary>
+    <author>
+      <name>Sikuan Yan</name>
+    </author>
+    <author>
+      <name>Xiufeng Yang</name>
+    </author>
+    <author>
+      <name>Zuchao Huang</name>
+    </author>
+    <author>
+      <name>Ercong Nie</name>
+    </author>
+    <author>
+      <name>Zifeng Ding</name>
+    </author>
+    <author>
+      <name>Zonggen Li</name>
+    </author>
+    <author>
+      <name>Xiaowen Ma</name>
+    </author>
+    <author>
+      <name>Hinrich Schütze</name>
+    </author>
+    <author>
+      <name>Volker Tresp</name>
+    </author>
+    <author>
+      <name>Yunpu Ma</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">work in progress</arxiv:comment>
+    <link href="http://arxiv.org/abs/2508.19828v3" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2508.19828v3" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>
