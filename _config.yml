@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: donlv1997@163.com
 description: "摸鱼使人快乐"
 keyword: "blog"
-url: "https://donlv1997.github.io"              # your host, for absolute URL
+url: "https://donpromax.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 collections:
@@ -18,7 +18,7 @@ future: true
 
 # SNS settings
 RSS: true
-github_username:    donlv1997
+github_username:    donpromax
 # weibo_username:     
 # twitter_username:   
 
@@ -70,8 +70,8 @@ kramdown:
 # gitalk
 gitalk:
   enable: true
-  owner: 'donlv1997'
-  repo: 'donlv1997.github.io'
+  owner: 'donpromax'
+  repo: 'donpromax.github.io'
   client_id: 'bf65f0c2804c0a49b820'
   client_secret: '150f0fe201c15a72f13ddee38e0ccce787058c87'
 
@@ -82,7 +82,7 @@ gitalk:
 ba_track_id: e6a13a93288708d3dee567a97fbfb3df
 # Google Analytics
 ga_track_id: 'UA-180536439-1'            # Format: UA-xxxxxx-xx
-ga_domain: donlv1997.github.io
+ga_domain: donpromax.github.io
 
 
 
