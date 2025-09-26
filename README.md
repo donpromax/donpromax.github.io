@@ -1,5 +1,5 @@
 # donlv1997 blog
 
-[click here](https://donlv1997.github.io)
+[click here](https://donpromax.github.io)
 
 本地使用：bundle exec jekyll serve --watch
