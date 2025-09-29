@@ -37,11 +37,11 @@ tags:
 输入/输出：人机交互的输入输出接口。
 
 ## What is CPU?
-CPU（<font style="color:rgb(31, 35, 40);">Central Processing Unit</font>）是计算机系统的重要组成部分，经常被比喻为计算机的“大脑”。CPU的主要职责是执行位于存储器（Memory）中的指令（<font style="color:rgb(31, 35, 40);">Instructions</font>），进行算数、逻辑运算，并管理计算机中不同不同部分之间的数据交换。
+CPU（<span style="color:rgb(31, 35, 40);">Central Processing Unit</span>）是计算机系统的重要组成部分，经常被比喻为计算机的“大脑”。CPU的主要职责是执行位于存储器（Memory）中的指令（<span style="color:rgb(31, 35, 40);">Instructions</span>），进行算数、逻辑运算，并管理计算机中不同不同部分之间的数据交换。
 
 **CPU的性能瓶颈**
 
-CPU的性能评价指标经常是时钟频率（<font style="color:rgb(31, 35, 40);">Clock speed</font>），表示CPU每秒可以执行的指令数；以及核心数（<font style="color:rgb(31, 35, 40);">number of cores</font>），表示CPU包含几个独立的计算单元。
+CPU的性能评价指标经常是时钟频率（<span style="color:rgb(31, 35, 40);">Clock speed</span>），表示CPU每秒可以执行的指令数；以及核心数（<span style="color:rgb(31, 35, 40);">number of cores</span>），表示CPU包含几个独立的计算单元。
 
 | ![](/img/2025/gpu-cuda/1728372385956-2d316484-c60e-4b90-a921-d73eb2e8cc50.webp) | ![](/img/2025/gpu-cuda/1728371939493-a34ec295-dc3d-4563-806d-ecf1ce0dfc0c.webp) |
 
@@ -58,12 +58,12 @@ CPU的时钟频率的提高也同时带来了更大的功耗，意味着需要�
 
 
 
-## <font style="color:rgb(31, 35, 40);">What is GPU?</font>
-<font style="color:rgb(31, 35, 40);">GPU (Graphics Processing Units，图形处理单元，也称为显卡) ，从命名可能看出来最早是为了加速图形处理（特别是电子游戏）而设计的，后来也被广泛运用于其他并行计算领域。</font>
+## <span style="color:rgb(31, 35, 40);">What is GPU?</span>
+<span style="color:rgb(31, 35, 40);">GPU (Graphics Processing Units，图形处理单元，也称为显卡) ，从命名可能看出来最早是为了加速图形处理（特别是电子游戏）而设计的，后来也被广泛运用于其他并行计算领域。</span>
 
-<font style="color:rgb(31, 35, 40);">与CPU的设计理念不同，GPU主要被设计用于处理数以千计的重复性任务。以图形处理为例，可以把显示器中的每个像素点的计算看成是一个任务，每个像素点之间相对独立互不干扰。GPU可以高效的并行处理每个像素点运算。</font>
+<span style="color:rgb(31, 35, 40);">与CPU的设计理念不同，GPU主要被设计用于处理数以千计的重复性任务。以图形处理为例，可以把显示器中的每个像素点的计算看成是一个任务，每个像素点之间相对独立互不干扰。GPU可以高效的并行处理每个像素点运算。</span>
 
-<font style="color:rgb(31, 35, 40);"></font>
+<span style="color:rgb(31, 35, 40);"></span>
 
 ![](/img/2025/gpu-cuda/1728375168813-6651a47b-d092-4f2f-aeaa-f39d4dca4ce1.gif)
 
@@ -86,7 +86,7 @@ CPU被设计得更擅长处理复杂的任务序列，一个程序也可能包�
 
 使用更多的晶体管用于数据处理核心（例如浮点数计算单元）也就带来了更高的浮点计算性能（FLOPs, floating-point operations per second）。
 
-另一方面，GPU可以使用延迟隐藏（<font style="color:rgb(26, 26, 26);">Latency hiding</font>）等手段来降低访存带来的等待。
+另一方面，GPU可以使用延迟隐藏（<span style="color:rgb(26, 26, 26);">Latency hiding</span>）等手段来降低访存带来的等待。
 
 
 
@@ -182,17 +182,17 @@ Let's take [Kepler](https://en.wikipedia.org/wiki/Kepler_(microarchitecture)) or
 
 从上面的示意图可以看到，该GPU有十六个SMs，并且每个SM有32个Cores。
 
-**<font style="color:rgb(31, 35, 40);">流处理器 Streaming Processors</font>**<font style="color:rgb(31, 35, 40);">(SPs or cores)：SPs是GPU中的主要处理单元，可以用于并行地在不同的数据上做计算。SP可以对应于“学校模型”中的课桌，每个SP都是用于处理一个个的任务。因此可以认为，有越多的SPs，就可以越多得并行处理任务。</font>
+**<span style="color:rgb(31, 35, 40);">流处理器 Streaming Processors</span>**<span style="color:rgb(31, 35, 40);">(SPs or cores)：SPs是GPU中的主要处理单元，可以用于并行地在不同的数据上做计算。SP可以对应于“学校模型”中的课桌，每个SP都是用于处理一个个的任务。因此可以认为，有越多的SPs，就可以越多得并行处理任务。</span>
 
-**<font style="color:rgb(31, 35, 40);">流多处理器 Streaming Multiprocessor</font>**<font style="color:rgb(31, 35, 40);">(SM or multiprocessor)：SM是多个SP的组合。SM可以认为是“学校模型”中的教室。SM作为一个更高级别的SP集合，可以统一管理内部所有SP的任务处理调度。</font>
+**<span style="color:rgb(31, 35, 40);">流多处理器 Streaming Multiprocessor</span>**<span style="color:rgb(31, 35, 40);">(SM or multiprocessor)：SM是多个SP的组合。SM可以认为是“学校模型”中的教室。SM作为一个更高级别的SP集合，可以统一管理内部所有SP的任务处理调度。</span>
 
-<font style="color:rgb(31, 35, 40);">具体到不同的GPU型号，SM和SP的数量各自不同。以Nvidia T4为例，T4总共有40个SMs，每个SM包含64个</font>Streaming Processors<font style="color:rgb(31, 35, 40);">。每个GPU的具体参数细节可以查阅Nvidia官方网站获得。</font>
+<span style="color:rgb(31, 35, 40);">具体到不同的GPU型号，SM和SP的数量各自不同。以Nvidia T4为例，T4总共有40个SMs，每个SM包含64个</span>Streaming Processors<span style="color:rgb(31, 35, 40);">。每个GPU的具体参数细节可以查阅Nvidia官方网站获得。</span>
 
-<font style="color:rgb(31, 35, 40);"></font>
+<span style="color:rgb(31, 35, 40);"></span>
 
 ![](/img/2025/gpu-cuda/1728528725254-767bc424-c64b-47b2-b762-720fba947761.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">An illustration of a streaming multiprocessor of RTX4090</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">An illustration of a streaming multiprocessor of RTX4090</span></div>
 
 以Nvidia RTX4090为例，上图是一个SM的构成示例图，可以看到除了SPs（Cores or Processors），还包含几个其他的组成部分：
 
@@ -206,7 +206,7 @@ Registers：供Thread使用，提供最快的访存速度。
 
 ![](/img/2025/gpu-cuda/1728529123664-ee3314de-d7c9-462f-bf99-61e4ad7d541f.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">Total view of RTX4090</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">Total view of RTX4090</span></div>
 
 ## 逻辑结构
 
@@ -220,33 +220,33 @@ Registers：供Thread使用，提供最快的访存速度。
 
 从上面的示意图可以看到此逻辑结构有2×3的6块blocks组成的grid，其中每个block由3×4个Threads组成。
 
-**Thread**：一个任务的执行单元，每个Thread负责处理一个Task，<font style="color:rgb(31, 35, 40);">可以对应于“学校模型”中的学生（苦力）。</font>
+**Thread**：一个任务的执行单元，每个Thread负责处理一个Task，<span style="color:rgb(31, 35, 40);">可以对应于“学校模型”中的学生（苦力）。</span>
 
-**Block**：若干个Threads组成的集合，可以是一维、二维或者三维的排布。可以对应于<font style="color:rgb(31, 35, 40);">“学校模型”中的班级。</font>单个Block中的Threads数量存在上限，通常是最多可以包含1024个线程，[Max dimension size of a thread block](https://en.wikipedia.org/wiki/Thread_block_(CUDA_programming)#Dimensions) (x,y,z): (1024, 1024, 64). For example, a block with dimensions of (32,32,1) will have 1024 threads。
+**Block**：若干个Threads组成的集合，可以是一维、二维或者三维的排布。可以对应于<span style="color:rgb(31, 35, 40);">“学校模型”中的班级。</span>单个Block中的Threads数量存在上限，通常是最多可以包含1024个线程，[Max dimension size of a thread block](https://en.wikipedia.org/wiki/Thread_block_(CUDA_programming)#Dimensions) (x,y,z): (1024, 1024, 64). For example, a block with dimensions of (32,32,1) will have 1024 threads。
 
-**Grid**：若干个Blocks组成的集合，可以是一维、二维或者三维的排布。可以对应于<font style="color:rgb(31, 35, 40);">“学校模型”中的年级。</font>[Max dimension size of a grid size ](https://en.wikipedia.org/wiki/Thread_block_(CUDA_programming)#Dimensions)(x,y,z): (2147483647, 65535, 65535)。
+**Grid**：若干个Blocks组成的集合，可以是一维、二维或者三维的排布。可以对应于<span style="color:rgb(31, 35, 40);">“学校模型”中的年级。</span>[Max dimension size of a grid size ](https://en.wikipedia.org/wiki/Thread_block_(CUDA_programming)#Dimensions)(x,y,z): (2147483647, 65535, 65535)。
 
-**Warps**：每个Block中的Thread将会被分为若干个<font style="color:rgb(31, 35, 40);">Warps（对于CUDA编程者来说不可感知）</font>。可以对应于<font style="color:rgb(31, 35, 40);">“学校模型”中将班级划分为若干个小组。每个Warp包含连续的32个Threads，Warp内的32个线程执行相同的指令（Warp内的线程是同步的）。</font>
+**Warps**：每个Block中的Thread将会被分为若干个<span style="color:rgb(31, 35, 40);">Warps（对于CUDA编程者来说不可感知）</span>。可以对应于<span style="color:rgb(31, 35, 40);">“学校模型”中将班级划分为若干个小组。每个Warp包含连续的32个Threads，Warp内的32个线程执行相同的指令（Warp内的线程是同步的）。</span>
 
 <a href="https://slideplayer.com/slide/16690299/" target="_blank">https://slideplayer.com/slide/16690299/</a>
 
 ---
 
-<font style="color:rgb(31, 35, 40);">关于Warp进阶阅读可以参考 </font>
+<span style="color:rgb(31, 35, 40);">关于Warp进阶阅读可以参考 </span>
 
 <a href="https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/" target="_blank">https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/</a>
 
-**<font style="color:rgb(31, 35, 40);">问：以Nvidia G80为例。如果某个SM被分配了3个Thread Blocks，每个Block包含256个Threads，该SM中有多少个Warps？</font>**
+**<span style="color:rgb(31, 35, 40);">问：以Nvidia G80为例。如果某个SM被分配了3个Thread Blocks，每个Block包含256个Threads，该SM中有多少个Warps？</span>**
 
-<font style="color:rgb(31, 35, 40);">答：每个Block被划分为 256/32 = 8 Warps。共有 8 * 3 = 24 Warps。在任意时刻，这24个Warps中只有一个Warp被Scheduler调度运行。</font>
+<span style="color:rgb(31, 35, 40);">答：每个Block被划分为 256/32 = 8 Warps。共有 8 * 3 = 24 Warps。在任意时刻，这24个Warps中只有一个Warp被Scheduler调度运行。</span>
 
 ---
 
 ![](/img/2025/gpu-cuda/1728390379738-41e89e58-a1fe-44ff-8951-3579a88e9ec8.jpeg)
 
-**<font style="color:rgb(31, 35, 40);">问：一个程序包含，1次对global memory的读操作（200 cycles）和4次独立的mutiply/add操作（每个4 cycles）。warps的context switch是零开销的，那么需要多少个warps才可以完全隐藏访存延迟？</font>**
+**<span style="color:rgb(31, 35, 40);">问：一个程序包含，1次对global memory的读操作（200 cycles）和4次独立的mutiply/add操作（每个4 cycles）。warps的context switch是零开销的，那么需要多少个warps才可以完全隐藏访存延迟？</span>**
 
-<font style="color:rgb(31, 35, 40);">答：每个warp有4个</font>**<font style="color:rgb(31, 35, 40);">mutiply/add</font>**<font style="color:rgb(31, 35, 40);">操作，4×4=16 个周期。我们需要覆盖200个周期，200/16=12.5，ceil(12.5)=13，至少需要13个warps可以完全隐藏访存延迟。</font>
+<span style="color:rgb(31, 35, 40);">答：每个warp有4个</span>**<span style="color:rgb(31, 35, 40);">mutiply/add</span>**<span style="color:rgb(31, 35, 40);">操作，4×4=16 个周期。我们需要覆盖200个周期，200/16=12.5，ceil(12.5)=13，至少需要13个warps可以完全隐藏访存延迟。</span>
 
 ---
 
@@ -260,7 +260,7 @@ GPU的物理结构与逻辑结果之间存在对应关系：
 
 ![](/img/2025/gpu-cuda/1728390674597-957153e4-e443-40c1-8060-71ee125b62d0.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">View of GPU memory</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">View of GPU memory</span></div>
 
 
 
@@ -277,17 +277,17 @@ GPU的物理结构与逻辑结果之间存在对应关系：
 
 Device Memory（显存）其次。然后是L2 Cache、L1 Cache/Shared Memory，最快的是Registers。
 
-<div style="text-align: center;"><font style="color:#8A8F8D;"></font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;"></span></div>
 
 ![](/img/2025/gpu-cuda/1728457006192-e28b7c1d-3172-4aff-b93a-b0a6a56de710.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">Logical GPU memory attributes</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">Logical GPU memory attributes</span></div>
 
-<div style="text-align: center;"><font style="color:#8A8F8D;"></font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;"></span></div>
 
 ![](/img/2025/gpu-cuda/1728531417764-a474eb4b-2f4e-4e4e-961a-617a46fa1cd1.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">Physical GPU memory attributes(outdated)</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">Physical GPU memory attributes(outdated)</span></div>
 
 **Global Memory**
 
@@ -301,7 +301,7 @@ Device Memory（显存）其次。然后是L2 Cache、L1 Cache/Shared Memory，�
 
 ![](/img/2025/gpu-cuda/1728458502217-db5ece14-552d-4aaa-ad95-8d8ad5a2a903.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">Global Memory Access Process</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">Global Memory Access Process</span></div>
 
 **Shared Memory**
 
@@ -331,13 +331,13 @@ cudaFuncSetAttribute(
 
 ![](/img/2025/gpu-cuda/1728460082736-aa2d6213-4e72-4401-b703-82fde6f1ce38.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">常量局部变量被定义为寄存器变量</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">常量局部变量被定义为寄存器变量</span></div>
 
-<div style="text-align: center;"><font style="color:#8A8F8D;"></font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;"></span></div>
 
 ![](/img/2025/gpu-cuda/1728460132237-d18d3680-9dd7-4590-b02b-d8805e108692.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">数组局部变量被定义为local memory</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">数组局部变量被定义为local memory</span></div>
 
 ## Some Official Specs 
 
@@ -366,7 +366,7 @@ CUDA对于Generative AI的训练推理加速起着至关重要的作用，例如
 
 ![](/img/2025/gpu-cuda/1728461913187-3971ef64-54ad-4bd1-ad5e-2880928fc08a.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">AI模型推理过程包含的一个个CUDA kernel的调用</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">AI模型推理过程包含的一个个CUDA kernel的调用</span></div>
 
 ****
 
@@ -384,11 +384,11 @@ CUDA (Compute Unified Device Architecture)是Nvidia开发的一种并行计算�
 
 ![](/img/2025/gpu-cuda/1728441878474-7b0e134b-d9d3-4caf-8f37-ce5a07d50027.webp)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">CUDA Compiler-NVCC</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">CUDA Compiler-NVCC</span></div>
 
 
 
-使用CUDA C/C++的文件的后缀为.cu，我们需要一个可以同时支持C/C++和CUDA的编译器。Nvidia开发了NVCC（<font style="color:rgb(31, 35, 40);">NVIDIA CUDA Compiler</font>），可以将C/C++和CUDA代码分别编译为在CPU以及GPU运行的二进制文件。NVCC的主要功能包括：
+使用CUDA C/C++的文件的后缀为.cu，我们需要一个可以同时支持C/C++和CUDA的编译器。Nvidia开发了NVCC（<span style="color:rgb(31, 35, 40);">NVIDIA CUDA Compiler</span>），可以将C/C++和CUDA代码分别编译为在CPU以及GPU运行的二进制文件。NVCC的主要功能包括：
 
 + 代码划分：区分.cu代码中哪些部分是CPU的代码，哪些部分是GPU的代码；
 + 编译优化：Host代码（CPU）使用传统的C/C++编译器，而Device代码（GPU）使用CUDA编译器；
@@ -399,11 +399,11 @@ CUDA (Compute Unified Device Architecture)是Nvidia开发的一种并行计算�
 ## Hello World!
 **Getting Started**
 
-1. <font style="color:rgb(31, 35, 40);">根据官网的教程安装 </font>
+1. <span style="color:rgb(31, 35, 40);">根据官网的教程安装 </span>
 
 <a href="https://developer.nvidia.com/cuda-downloads" target="_blank">Cuda Toolkit</a>
 
-2. 如果你的电脑没有Nvidia GPU，可以使用<font style="color:rgb(31, 35, 40);">Google Colab，教程</font>
+2. 如果你的电脑没有Nvidia GPU，可以使用<span style="color:rgb(31, 35, 40);">Google Colab，教程</span>
 
 <a href="https://medium.com/@giahuy04/the-easiest-way-to-run-cuda-c-in-google-colab-831efbc33d7a" target="_blank">in here</a>
 
@@ -434,15 +434,15 @@ int main()
 
 ---
 
-_**__ host __**_<font style="color:rgb(31, 35, 40);">: </font>**<font style="color:rgb(31, 35, 40);">调用</font>**<font style="color:rgb(31, 35, 40);">和</font>**<font style="color:rgb(31, 35, 40);">运行</font>**<font style="color:rgb(31, 35, 40);">于CPU上的代码块，如果一个函数不含任何CUDA修饰符，则默认为host代码块，例如上面的main()函数。</font>`<font style="color:rgb(31, 35, 40);">int main()</font>`<font style="color:rgb(31, 35, 40);">与 </font>`<font style="color:rgb(31, 35, 40);">__host__ int main()</font>`<font style="color:rgb(31, 35, 40);">是等效的。</font>
+_**__ host __**_<span style="color:rgb(31, 35, 40);">: </span>**<span style="color:rgb(31, 35, 40);">调用</span>**<span style="color:rgb(31, 35, 40);">和</span>**<span style="color:rgb(31, 35, 40);">运行</span>**<span style="color:rgb(31, 35, 40);">于CPU上的代码块，如果一个函数不含任何CUDA修饰符，则默认为host代码块，例如上面的main()函数。</span>`<span style="color:rgb(31, 35, 40);">int main()</span>`<span style="color:rgb(31, 35, 40);">与 </span>`<span style="color:rgb(31, 35, 40);">__host__ int main()</span>`<span style="color:rgb(31, 35, 40);">是等效的。</span>
 
-_**__device__**_：**<font style="color:rgb(31, 35, 40);">调用</font>**<font style="color:rgb(31, 35, 40);">和</font>**<font style="color:rgb(31, 35, 40);">运行</font>**于GPU上的代码块，
+_**__device__**_：**<span style="color:rgb(31, 35, 40);">调用</span>**<span style="color:rgb(31, 35, 40);">和</span>**<span style="color:rgb(31, 35, 40);">运行</span>**于GPU上的代码块，
 
-**<font style="color:rgb(31, 35, 40);">__ </font>**_**<font style="color:rgb(31, 35, 40);">global</font>**_**<font style="color:rgb(31, 35, 40);"> __</font>**<font style="color:rgb(31, 35, 40);">：被host代码块（CPU）</font>**<font style="color:rgb(31, 35, 40);">调用</font>**<font style="color:rgb(31, 35, 40);">，在device（GPU）上</font>**<font style="color:rgb(31, 35, 40);">运行</font>**<font style="color:rgb(31, 35, 40);">。</font>
+**<span style="color:rgb(31, 35, 40);">__ </span>**_**<span style="color:rgb(31, 35, 40);">global</span>**_**<span style="color:rgb(31, 35, 40);"> __</span>**<span style="color:rgb(31, 35, 40);">：被host代码块（CPU）</span>**<span style="color:rgb(31, 35, 40);">调用</span>**<span style="color:rgb(31, 35, 40);">，在device（GPU）上</span>**<span style="color:rgb(31, 35, 40);">运行</span>**<span style="color:rgb(31, 35, 40);">。</span>
 
-**<font style="color:rgb(31, 35, 40);"><<<1,1>>></font>**<font style="color:rgb(31, 35, 40);">: 调用kernel时需要指定的维度信息，第一个1表示Blocks的数量，第二个1表示每个Block中的Threads数量。用“学校模型”来理解，你作为校长，对于这个任务指定了一个班级，每个班级使用一个学生来处理。</font>
+**<span style="color:rgb(31, 35, 40);"><<<1,1>>></span>**<span style="color:rgb(31, 35, 40);">: 调用kernel时需要指定的维度信息，第一个1表示Blocks的数量，第二个1表示每个Block中的Threads数量。用“学校模型”来理解，你作为校长，对于这个任务指定了一个班级，每个班级使用一个学生来处理。</span>
 
-**<font style="color:rgb(31, 35, 40);">cudaDeviceSynchronize()</font>**<font style="color:rgb(31, 35, 40);">：cuda device线程同步语句，可以确保GPU上的kernel线程全部执行完毕后，再运行后面的CPU代码。另外，在kernel内部，还有</font>`__syncthreads()`可以确保同一个Block内的Threads完成同步。
+**<span style="color:rgb(31, 35, 40);">cudaDeviceSynchronize()</span>**<span style="color:rgb(31, 35, 40);">：cuda device线程同步语句，可以确保GPU上的kernel线程全部执行完毕后，再运行后面的CPU代码。另外，在kernel内部，还有</span>`__syncthreads()`可以确保同一个Block内的Threads完成同步。
 
 ---
 
@@ -454,7 +454,7 @@ _**__device__**_：**<font style="color:rgb(31, 35, 40);">调用</font>**<font s
 
 然后运行生成的二进制可执行文件：
 
-+ <font style="color:rgb(31, 35, 40);">./a.out</font>
++ <span style="color:rgb(31, 35, 40);">./a.out</span>
 
 ![](/img/2025/gpu-cuda/1728444175393-26e4e432-757b-4820-9f4e-4462269ca17c.webp)
 
@@ -463,11 +463,11 @@ _**__device__**_：**<font style="color:rgb(31, 35, 40);">调用</font>**<font s
 ## Vector Add
 ![](/img/2025/gpu-cuda/1728444314035-1e78658e-3b2e-4cea-acff-64c8873eeff0.gif)
 
-<div style="text-align: center;"><font style="color:#8A8F8D;">Vector add</font></div>
+<div style="text-align: center;"><span style="color:#8A8F8D;">Vector add</span></div>
 
 
 
-**A **_**CPU**_** version of Vector Add**
+**A CPU version of Vector Add**
 
 ```c
 float *x, *y;
@@ -485,25 +485,25 @@ for (i = 0; i < N; i++)    // Add N elements...
   y[i] = x[i] + y[i];     // Add one element at a time...
 ```
 
-**<font style="color:#DF2A3F;"></font>**
+**<span style="color:#DF2A3F;"></span>**
 
-**<font style="color:#DF2A3F;">i=0</font>**
+**<span style="color:#DF2A3F;">i=0</span>**
 
 ![](/img/2025/gpu-cuda/1728444484923-f5d60493-06c7-42f4-be22-7b8f4f830fc1.gif)
 
-**<font style="color:#DF2A3F;"></font>**
+**<span style="color:#DF2A3F;"></span>**
 
-**<font style="color:#DF2A3F;">y[0] = x[0] + y[0]</font>**
+**<span style="color:#DF2A3F;">y[0] = x[0] + y[0]</span>**
 
-**<font style="color:#DF2A3F;"></font>**
+**<span style="color:#DF2A3F;"></span>**
 
 ![](/img/2025/gpu-cuda/1728444532685-5cb46b75-cd42-4112-9a8f-e40e29cd05eb.gif)
 
-**<font style="color:#DF2A3F;"></font>**
+**<span style="color:#DF2A3F;"></span>**
 
-**<font style="color:#DF2A3F;">And so on....</font>**
+**<span style="color:#DF2A3F;">And so on....</span>**
 
-**<font style="color:#DF2A3F;"></font>**
+**<span style="color:#DF2A3F;"></span>**
 
 **Vector Add CUDA Kernel**
 
@@ -525,7 +525,7 @@ __global__ void vectorAdd(int *a, int *b, int *c) {
 
 ---
 
-**About 1-D indexing：Why **`**blockIdx.x * blockDim.x + threadIdx.x**`**？**
+**About 1-D indexing：Why `blockIdx.x * blockDim.x + threadIdx.x`？**
 
 假设我们有4个Blocks，每个Block有8个Threads，来处理长度是32的Vector Add。那么Vector Index 21 位于第3个Block的第6个线程：
 
@@ -603,7 +603,7 @@ int main() {
 
 ---
 
-**<font style="color:rgb(31, 35, 40);">Initialization of values on the GPU</font>**
+**<span style="color:rgb(31, 35, 40);">Initialization of values on the GPU</span>**
 
 **cudaMalloc**: 为device申请内存空间，与C中的malloc类似。你阅读其他文档或者代码时，可能看到`cudaMalloc((void **)&d_a, N * sizeof(int))`或者`cudaMalloc(&d_a, N * sizeof(int))`两种写法，这两种写法是等效的；
 
@@ -729,7 +729,7 @@ PYBIND11_MODULE(example_kernels, m) {
 
 **setup.py**
 
-```cpp
+```python
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
