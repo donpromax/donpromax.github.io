@@ -46,7 +46,7 @@ CPU的性能评价指标经常是时钟频率（<font style="color:rgb(31, 35, 4
 | ![](/img/2025/gpu-cuda/1728372385956-2d316484-c60e-4b90-a921-d73eb2e8cc50.webp) | ![](/img/2025/gpu-cuda/1728371939493-a34ec295-dc3d-4563-806d-ecf1ce0dfc0c.webp) |
 
 
-早期CPU的发展以提高时钟频率为主，但这种趋势在2004~2005年就得以减缓，主要原因是由功耗限制`Power Wall`和访存限制`<font style="color:rgb(31, 35, 40);">Memory wall</font>`<font style="color:rgb(31, 35, 40);">两大阻碍。</font>
+早期CPU的发展以提高时钟频率为主，但这种趋势在2004~2005年就得以减缓，主要原因是由功耗限制`Power Wall`和访存限制`Memory wall`两大阻碍。
 
 CPU的时钟频率的提高也同时带来了更大的功耗，意味着需要更大的电源，以及可能面临的运行时高温度问题。另一方面，受限于存储技术的发展限制，在很长一段时间内计算机程序的主要性能瓶颈并不在计算上，而是在访存上。
 
@@ -132,7 +132,7 @@ MIMD：现代多核CPU的计算机最常见结构：
 ## Amdahl's law
 阿姆达定律指出了程序的加速比取决于程序中可以并行的部分（P）的占比：
 
-$ \text{speedup} = \frac{1}{P/N+S} $
+$$ \text{speedup} = \frac{1}{P/N+S} $$
 
 P = parallel fraction, N = number of processors and S = serial fraction.
 
