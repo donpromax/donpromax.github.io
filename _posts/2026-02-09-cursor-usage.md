@@ -37,45 +37,89 @@ Cursor 是一款基于 VS Code 的 AI IDE，主打“写代码 + 读代码 + 改
 
 ---
 
-## 二、Cursor CLI 使用
+## 二、Cursor CLI 使用（基于官方文档）
 
-Cursor 提供命令行入口，最常见的用途是**从终端快速打开项目**、**配合 Git 使用**。  
-若 `cursor` 命令不可用，通常需要在 IDE 内手动安装 CLI：
+Cursor CLI 在终端中以 **`agent` 命令**运行，支持交互式会话、脚本化执行以及会话管理。下面内容参考官方文档：<https://cursor.com/docs/cli/overview>。
 
-1. 打开 Cursor。
-2. 按 `Cmd/Ctrl + Shift + P` 打开命令面板。
-3. 搜索并执行类似 “Install 'cursor' command in PATH” 的命令（名称可能略有差异）。
-
-### 1. 基础用法
+### 1. 安装与启动
 
 ```bash
-# 打开当前目录为项目
-cursor .
+# Install (macOS, Linux, WSL)
+curl https://cursor.com/install -fsS | bash
 
-# 直接打开某个文件
-cursor README.md
+# Install (Windows PowerShell)
+irm 'https://cursor.com/install?win32=true' | iex
 
-# 打开新窗口（参数以 --help 输出为准）
-cursor --new-window .
+# Run interactive session
+agent
 ```
 
-### 2. 查看帮助
+### 2. 交互模式（Interactive mode）
+
+交互模式适合边聊边改：描述目标、审阅改动、确认执行命令。
 
 ```bash
-cursor --help
+# Start interactive session
+agent
+
+# Start with initial prompt
+agent "refactor the auth module to use JWT tokens"
 ```
 
-CLI 选项可能会随版本变化，建议以 `--help` 输出为准。
+### 3. 模式（Modes）
 
-### 3. 作为 Git 编辑器（可选）
+CLI 支持与编辑器一致的模式，可通过 **斜杠命令**、**快捷键** 或 `--mode` 切换：
 
-如果希望在 `git commit` 时用 Cursor 编辑提交信息，可尝试：
+- **Plan**：`Shift+Tab` / `/plan` / `--mode=plan`
+- **Ask**：`/ask` / `--mode=ask`
+
+### 4. 非交互模式（Print mode）
+
+用于脚本、CI 或自动化场景，直接输出结果：
 
 ```bash
-git config --global core.editor "cursor --wait"
+# Run with specific prompt and model
+agent -p "find and fix performance issues" --model "gpt-5.2"
+
+# Use with git changes included for review
+agent -p "review these changes for security issues" --output-format text
 ```
 
-> 若 `--wait` 不可用，请以 `cursor --help` 的参数说明为准。
+### 5. Cloud Agent handoff
+
+将对话转交到 Cloud Agent 后台继续执行，在消息前加 `&`：
+
+```bash
+# Send a task to Cloud Agent
+& refactor the auth module and add comprehensive tests
+```
+
+任务可在 <https://cursor.com/agents> 继续查看与接力。
+
+### 6. Sessions
+
+```bash
+# List all previous chats
+agent ls
+
+# Resume latest conversation
+agent resume
+
+# Resume specific conversation
+agent --resume="chat-id-here"
+```
+
+### 7. Sandbox controls
+
+交互模式中使用 `/sandbox` 进入设置菜单，可切换沙箱模式、控制网络访问，设置会持久化。
+
+### 8. Max mode
+
+对支持的模型使用 `/max-mode [on|off]` 切换 Max 模式。
+
+### 9. Sudo password prompting
+
+当命令需要 `sudo` 时，CLI 会弹出安全的密码提示，密码经由安全通道直接传给 `sudo`，模型不可见。
 
 ---
 
