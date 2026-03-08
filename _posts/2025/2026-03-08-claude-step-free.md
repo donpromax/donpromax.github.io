@@ -5,6 +5,8 @@ subtitle:   "用 Anthropic-compatible 接口低成本体验 AI 编程助手"
 date:       2026-03-08 12:00:00
 author:     "donpromax"
 header-style: text
+header-img: "img/2025/claude-step/cover-openrouter-step.svg"
+header-mask: 0.38
 catalog: true
 tags:
     - 人工智能

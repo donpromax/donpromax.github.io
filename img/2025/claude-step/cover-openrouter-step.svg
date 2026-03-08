@@ -1,0 +1,140 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="132" y1="84" x2="1458" y2="844" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.45" stop-color="#0E1730"/>
+      <stop offset="1" stop-color="#160F2F"/>
+    </linearGradient>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(367 420) rotate(36.9988) scale(381.765 312.528)">
+      <stop stop-color="#26D7FF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#26D7FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1250 288) rotate(141.492) scale(436.161 332.453)">
+      <stop stop-color="#8B5CF6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="266" y1="247" x2="776" y2="692" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F213A"/>
+      <stop offset="1" stop-color="#0A1324"/>
+    </linearGradient>
+    <linearGradient id="route" x1="1071" y1="205" x2="1345" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142445"/>
+      <stop offset="1" stop-color="#11162A"/>
+    </linearGradient>
+    <linearGradient id="cyanStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4DE9FF"/>
+      <stop offset="1" stop-color="#3AC7FF"/>
+    </linearGradient>
+    <linearGradient id="violetStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#B58CFF"/>
+      <stop offset="1" stop-color="#705CFF"/>
+    </linearGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="cardShadow" x="178" y="165" width="725" height="601" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="12" dy="18"/>
+      <feGaussianBlur stdDeviation="36"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.00833333 0 0 0 0 0.0623333 0 0 0 0 0.143833 0 0 0 0.48 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <filter id="routeShadow" x="962" y="134" width="471" height="629" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="0" dy="16"/>
+      <feGaussianBlur stdDeviation="34"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0208333 0 0 0 0 0.0416667 0 0 0 0 0.120833 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" stroke="white" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="367" cy="420" rx="350" ry="280" fill="url(#glowLeft)"/>
+  <ellipse cx="1250" cy="288" rx="408" ry="294" fill="url(#glowRight)"/>
+  <circle cx="533" cy="142" r="112" fill="#22D3EE" opacity="0.14" filter="url(#softBlur)"/>
+  <circle cx="1378" cy="680" r="146" fill="#8B5CF6" opacity="0.15" filter="url(#softBlur)"/>
+
+  <path d="M0 710C154 642 275 625 399 637C541 651 639 737 816 730C986 724 1105 617 1266 617C1368 617 1476 653 1600 734V900H0V710Z" fill="#060B15" fill-opacity="0.44"/>
+
+  <g opacity="0.38">
+    <path d="M124 219C182 182 262 176 322 205" stroke="#45DBFF" stroke-width="2"/>
+    <path d="M1284 110C1360 101 1432 137 1467 207" stroke="#A684FF" stroke-width="2"/>
+    <path d="M1365 618C1421 602 1486 618 1530 664" stroke="#6FE6FF" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <rect x="250" y="228" width="585" height="500" rx="30" fill="url(#card)"/>
+    <rect x="250.8" y="228.8" width="583.4" height="498.4" rx="29.2" stroke="url(#cyanStroke)" stroke-opacity="0.3" stroke-width="1.6"/>
+  </g>
+
+  <circle cx="287" cy="266" r="7" fill="#FB7185"/>
+  <circle cx="315" cy="266" r="7" fill="#FBBF24"/>
+  <circle cx="343" cy="266" r="7" fill="#34D399"/>
+
+  <rect x="290" y="304" width="208" height="42" rx="14" fill="#0E2947"/>
+  <rect x="301" y="317" width="60" height="16" rx="8" fill="#4DE9FF" fill-opacity="0.25"/>
+  <rect x="370" y="317" width="117" height="16" rx="8" fill="#E5F4FF" fill-opacity="0.12"/>
+
+  <rect x="290" y="374" width="505" height="92" rx="22" fill="#081221"/>
+  <rect x="290" y="488" width="412" height="70" rx="22" fill="#0A1427"/>
+  <rect x="290" y="578" width="460" height="94" rx="22" fill="#091426"/>
+
+  <text x="322" y="427" fill="#61E8FF" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="30">$ claude -p</text>
+  <text x="322" y="464" fill="#D7EAFE" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="24">"你好，请用中文回答"</text>
+
+  <text x="322" y="531" fill="#A7BBD9" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="22">ANTHROPIC_BASE_URL</text>
+  <text x="322" y="617" fill="#A7BBD9" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="22">ANTHROPIC_MODEL</text>
+  <text x="322" y="653" fill="#FFFFFF" font-family="SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace" font-size="24">stepfun/step-3.5-flash:free</text>
+
+  <rect x="540" y="514" width="126" height="18" rx="9" fill="#4DE9FF" fill-opacity="0.2"/>
+  <rect x="536" y="625" width="184" height="18" rx="9" fill="#9E86FF" fill-opacity="0.24"/>
+
+  <g filter="url(#routeShadow)">
+    <rect x="1030" y="186" width="335" height="530" rx="36" fill="url(#route)"/>
+    <rect x="1030.8" y="186.8" width="333.4" height="528.4" rx="35.2" stroke="url(#violetStroke)" stroke-opacity="0.32" stroke-width="1.6"/>
+  </g>
+
+  <circle cx="1198" cy="274" r="36" fill="#0E1A30" stroke="#4DE9FF" stroke-width="2"/>
+  <circle cx="1112" cy="388" r="22" fill="#0E1A30" stroke="#4DE9FF" stroke-width="2"/>
+  <circle cx="1288" cy="390" r="22" fill="#0E1A30" stroke="#9E86FF" stroke-width="2"/>
+  <circle cx="1198" cy="508" r="30" fill="#0E1A30" stroke="#9E86FF" stroke-width="2"/>
+  <circle cx="1112" cy="606" r="20" fill="#0E1A30" stroke="#6EE7F9" stroke-width="2"/>
+  <circle cx="1288" cy="606" r="20" fill="#0E1A30" stroke="#6F5CFF" stroke-width="2"/>
+
+  <path d="M1198 310V342C1198 356 1187 367 1173 367H1137C1123 367 1112 378 1112 392V392" stroke="#4DE9FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1198 310V342C1198 356 1209 367 1223 367H1263C1277 367 1288 378 1288 392V392" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1112 410V452C1112 468 1125 481 1141 481H1170C1186 481 1198 494 1198 510V510" stroke="#5FE7FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1288 410V452C1288 468 1275 481 1259 481H1228C1212 481 1198 494 1198 510V510" stroke="#9E86FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1198 538V563C1198 579 1186 592 1170 592H1138C1123 592 1112 604 1112 619" stroke="#78EEFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1198 538V563C1198 579 1210 592 1226 592H1266C1280 592 1288 603 1288 619" stroke="#755CFF" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="1198" cy="274" r="10" fill="#4DE9FF"/>
+  <circle cx="1112" cy="388" r="6" fill="#4DE9FF"/>
+  <circle cx="1288" cy="390" r="6" fill="#A78BFA"/>
+  <circle cx="1198" cy="508" r="8" fill="#A78BFA"/>
+  <circle cx="1112" cy="606" r="5" fill="#67E8F9"/>
+  <circle cx="1288" cy="606" r="5" fill="#6F5CFF"/>
+
+  <rect x="1081" y="650" width="232" height="28" rx="14" fill="#F8FAFC" fill-opacity="0.08"/>
+  <rect x="1112" y="650" width="74" height="28" rx="14" fill="#4DE9FF" fill-opacity="0.18"/>
+  <rect x="1200" y="650" width="77" height="28" rx="14" fill="#9E86FF" fill-opacity="0.18"/>
+
+  <g opacity="0.85">
+    <circle cx="935" cy="228" r="4" fill="#4DE9FF"/>
+    <circle cx="964" cy="255" r="3" fill="#9E86FF"/>
+    <circle cx="921" cy="281" r="2.5" fill="#E2E8F0"/>
+    <circle cx="888" cy="602" r="4" fill="#4DE9FF"/>
+    <circle cx="921" cy="630" r="3" fill="#C4B5FD"/>
+    <circle cx="962" cy="584" r="2.5" fill="#E2E8F0"/>
+  </g>
+</svg>
